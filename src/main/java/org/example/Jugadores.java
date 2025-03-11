@@ -6,47 +6,47 @@ import java.net.*;
 public class Jugadores extends Thread {
     private Socket socket;
     private Presentador presentador;
-    private PrintWriter out;
-    private BufferedReader in;
+    private PrintWriter salida;
+    private BufferedReader entrada;
     private String nombreJugador;
-    private boolean registrado = false;
 
     public Jugadores(Socket socket, Presentador presentador) throws IOException {
         this.socket = socket;
         this.presentador = presentador;
-        this.out = new PrintWriter(socket.getOutputStream(), true);
-        this.in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+        this.salida = new PrintWriter(socket.getOutputStream(), true);
+        this.entrada = new BufferedReader(new InputStreamReader(socket.getInputStream()));
     }
 
     @Override
     public void run() {
         try {
-            out.println("Ingrese su nombre:");
-            nombreJugador = in.readLine();
-            presentador.registrarJugador(this);
-            registrado = true;
+            salida.println("Ingrese su nombre:");
+            nombreJugador = entrada.readLine();
+            presentador.registrarJugador(this);  // referencia a la instancia actual de la clase
 
-            out.println("Bienvenido " + nombreJugador + "! Esperando a que inicie el juego...");
-            out.println("Para empezar escribe S.");
+            salida.println("Bienvenido " + nombreJugador + "! Esperando a que inicie el juego...");
 
             while (true) {
-                String input = in.readLine();
-                if (input == null) break;
+                String input = entrada.readLine();
+                if (input == null || input.equals("Cerrando el juego... ¡Gracias por jugar!")) {
+                    break;
+                }
 
-                if (input.equalsIgnoreCase("s") && !presentador.KahootEnProcesoONo()) {
-                    presentador.startQuiz();
-                } else if (presentador.KahootEnProcesoONo()) {
+                if (presentador.kahootEjecutandose()) {
                     try {
                         int respuesta = Integer.parseInt(input);
-                        long responseTime = System.currentTimeMillis();
-                        presentador.registrarPregunta(nombreJugador, respuesta, responseTime);
+                        if (respuesta >= 1  && respuesta <= 4) {
+                            presentador.registrarPregunta(nombreJugador, respuesta);
+                        }else {
+                            enviarMensaje("Respuesta inválida. Ingrese un número del 1 al 4.");
+                        }
                     } catch (NumberFormatException e) {
-                        sendMessage("Respuesta inválida. Ingrese un número.");
+                        enviarMensaje("Respuesta inválida. Ingrese un número.");
                     }
                 }
             }
         } catch (IOException e) {
-            System.out.println("Cliente desconectado: " + (registrado ? nombreJugador : "no registrado"));
+            System.out.println("Cliente desconectado: " + nombreJugador + " no registrado");
         } finally {
             try {
                 socket.close();
@@ -56,11 +56,15 @@ public class Jugadores extends Thread {
         }
     }
 
-    public void sendMessage(String message) {
-        out.println(message);
+    public void enviarMensaje(String message) {
+        salida.println(message);
     }
 
     public String getNombreJugador() {
         return nombreJugador;
+    }
+
+    public Socket getSocket() {
+        return socket;
     }
 }

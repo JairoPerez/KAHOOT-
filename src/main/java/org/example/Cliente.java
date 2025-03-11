@@ -4,11 +4,11 @@ import java.io.*;
 import java.net.*;
 
 public class Cliente {
-    private static final String SERVIDOR = "localhost"; // Cambia a la IP del servidor si es necesario
-    private static final int PUERTO = 4444;
+    private static final String server = "localhost";
+    private static final int port = 1234;
 
     public static void main(String[] args) {
-        try (Socket socket = new Socket(SERVIDOR, PUERTO);
+        try (Socket socket = new Socket(server, port);
              BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
              PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
              BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in))) {
@@ -24,6 +24,7 @@ public class Cliente {
                     }
                 } catch (IOException e) {
                     System.out.println("Desconectado del servidor.");
+                    System.exit(0);
                 }
             }).start();
 

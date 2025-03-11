@@ -1,79 +1,251 @@
-{
-  "preguntas": [
-    {
-      "pregunta": "¿Qué frase icónica dice Jack Nicholson en 'El Resplandor' cuando rompe la puerta con un hacha?",
-      "opciones": ["I'm home!", "Here's Johnny!", "Heeere I am!", "It's me, Jack!"],
-      "respuesta": 1,
-      "tiempo": 15
-    },
-    {
-      "pregunta": "En 'Interstellar', ¿qué planeta visitan primero y por qué representa un problema?",
-      "opciones": [
-        "El planeta de hielo, porque tiene tormentas constantes",
-        "El planeta de Miller, porque el tiempo pasa más rápido debido a la gravedad",
-        "El planeta de Edmunds, porque está completamente oscuro",
-        "Ninguno, se quedan en la nave"
-      ],
-      "respuesta": 1,
-      "tiempo": 20
-    },
-    {
-      "pregunta": "En 'Dune: Parte 2', ¿qué facción rivaliza directamente con la Casa Atreides?",
-      "opciones": ["Los Fremen", "La Cofradía Espacial", "La Casa Harkonnen", "Los Sardaukar"],
-      "respuesta": 2,
-      "tiempo": 15
-    },
-    {
-      "pregunta": "En 'Whiplash', ¿cuál es el nombre del despiadado profesor de música que atormenta a Andrew?",
-      "opciones": ["Mr. Simmons", "Terence Fletcher", "John Neiman", "Charlie Parker"],
-      "respuesta": 1,
-      "tiempo": 15
-    },
-    {
-      "pregunta": "¿Cuál es el sueño de los protagonistas en 'La La Land'?",
-      "opciones": [
-        "Convertirse en estrellas de cine y música",
-        "Viajar por el mundo juntos",
-        "Abrir un restaurante",
-        "Formar una banda de rock"
-      ],
-      "respuesta": 0,
-      "tiempo": 15
-    },
-    {
-      "pregunta": "¿Qué instrumento toca el protagonista en 'El pianista'?",
-      "opciones": ["Violín", "Piano", "Guitarra", "Saxofón"],
-      "respuesta": 1,
-      "tiempo": 10
-    },
-    {
-      "pregunta": "¿Cuál es el color predominante en las escenas con Oskar Schindler en 'La lista de Schindler'?",
-      "opciones": ["Azul", "Rojo", "Blanco y negro", "Sepia"],
-      "respuesta": 2,
-      "tiempo": 10
-    },
-    {
-      "pregunta": "¿Cuál de estas películas de Christopher Nolan juega con la percepción del tiempo?",
-      "opciones": ["Inception", "Dunkirk", "Tenet", "Todas las anteriores"],
-      "respuesta": 3,
-      "tiempo": 15
-    },
-    {
-      "pregunta": "¿Qué objeto es clave para el desenlace de 'Inception'?",
-      "opciones": ["Un dado", "Un reloj", "Una peonza", "Una moneda"],
-      "respuesta": 2,
-      "tiempo": 10
-    },
-    {
-      "pregunta": "En 'Oppenheimer', ¿cuál es el principal dilema del protagonista?",
-      "opciones": [
-        "Crear la bomba antes que los nazis, aunque tenga consecuencias devastadoras",
-        "Detener el desarrollo de la bomba nuclear",
-        "Convencer al gobierno de no usar la bomba",
-        "Construir un reactor nuclear para uso pacífico"
-      ],
-      "respuesta": 0,
-      "tiempo": 20
-    }
-  ]
-}
+[
+  {
+    "pregunta": "¿Cuál es el lema de la Casa Stark en 'Juego de Tronos'?",
+    "opciones": [
+      "Fuego y Sangre",
+      "Invierno está llegando",
+      "Crece fuerte",
+      "Nunca olvides"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Quién es el dragón más grande y poderoso en 'La Casa del Dragón'?",
+    "opciones": [
+      "Syrax",
+      "Caraxes",
+      "Vhagar",
+      "Arrax"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "¿Qué personaje de 'Juego de Tronos' es conocido como 'El Matarreyes'?",
+    "opciones": [
+      "Tyrion Lannister",
+      "Jaime Lannister",
+      "Joffrey Baratheon",
+      "Bronn"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué Casa es la principal rival de los Targaryen en 'La Casa del Dragón'?",
+    "opciones": [
+      "Casa Stark",
+      "Casa Hightower",
+      "Casa Lannister",
+      "Casa Velaryon"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Quién mata a Daenerys Targaryen en 'Juego de Tronos'?",
+    "opciones": [
+      "Tyrion Lannister",
+      "Jon Nieve",
+      "Arya Stark",
+      "Cersei Lannister"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Cuál es el nombre del dragón de Daenerys Targaryen que muere en 'Juego de Tronos'?",
+    "opciones": [
+      "Drogon",
+      "Rhaegal",
+      "Viserion",
+      "Balerion"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "¿Quién es el padre de Rhaenyra Targaryen en 'La Casa del Dragón'?",
+    "opciones": [
+      "Daemon Targaryen",
+      "Viserys I",
+      "Aegon II",
+      "Baelon Targaryen"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué personaje es conocido como 'El Perro' en 'Juego de Tronos'?",
+    "opciones": [
+      "Gregor Clegane",
+      "Sandor Clegane",
+      "Brienne de Tarth",
+      "Podrick Payne"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué evento marca el inicio de la Danza de los Dragones en 'La Casa del Dragón'?",
+    "opciones": [
+      "La muerte de Viserys I",
+      "La coronación de Aegon II",
+      "La boda de Rhaenyra y Daemon",
+      "El nacimiento de un heredero Targaryen"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Quién se sienta en el Trono de Hierro al final de 'Juego de Tronos'?",
+    "opciones": [
+      "Jon Nieve",
+      "Bran Stark",
+      "Daenerys Targaryen",
+      "Sansa Stark"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Quién es el líder de la Casa Lannister al comienzo de 'Juego de Tronos'?",
+    "opciones": [
+      "Tywin Lannister",
+      "Cersei Lannister",
+      "Jaime Lannister",
+      "Tyrion Lannister"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué animal representa a la Casa Stark?",
+    "opciones": [
+      "Un león",
+      "Un lobo",
+      "Un dragón",
+      "Un oso"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Quién mata a Joffrey Baratheon en su boda?",
+    "opciones": [
+      "Olenna Tyrell",
+      "Tyrion Lannister",
+      "Sansa Stark",
+      "Littlefinger"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es el nombre de la espada de Jon Nieve?",
+    "opciones": [
+      "Aguja",
+      "Garra",
+      "Lamento de Viuda",
+      "Albor"
+    ],
+    "respuesta": 3
+  },
+  {
+    "pregunta": "¿Qué personaje es conocido como 'El Caballero de las Cebollas'?",
+    "opciones": [
+      "Davos Seaworth",
+      "Brienne de Tarth",
+      "Sandor Clegane",
+      "Jorah Mormont"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Quién es el Rey en el Norte al comienzo de la serie?",
+    "opciones": [
+      "Robb Stark",
+      "Eddard Stark",
+      "Jon Nieve",
+      "Bran Stark"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué personaje es conocido como 'El Rey de la Noche'?",
+    "opciones": [
+      "El líder de los Caminantes Blancos",
+      "El líder de los Salvajes",
+      "El líder de los Inmaculados",
+      "El líder de los Dothraki"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Quién es el padre de Jon Nieve?",
+    "opciones": [
+      "Eddard Stark",
+      "Rhaegar Targaryen",
+      "Robert Baratheon",
+      "Jaime Lannister"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué personaje es conocido como 'El Fantasma de Harrenhal'?",
+    "opciones": [
+      "Arya Stark",
+      "Brienne de Tarth",
+      "Melisandre",
+      "Catelyn Stark"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Quién es el líder de los Inmaculados?",
+    "opciones": [
+      "Grey Worm",
+      "Daenerys Targaryen",
+      "Missandei",
+      "Jorah Mormont"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué personaje es conocido como 'El Hombre Sin Rostro'?",
+    "opciones": [
+      "Jaqen H'ghar",
+      "Syrio Forel",
+      "Petyr Baelish",
+      "Varys"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Quién es el líder de los Salvajes?",
+    "opciones": [
+      "Mance Rayder",
+      "Tormund Giantsbane",
+      "Ygritte",
+      "Styr"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué personaje es conocido como 'El Sabueso'?",
+    "opciones": [
+      "Sandor Clegane",
+      "Gregor Clegane",
+      "Brienne de Tarth",
+      "Bronn"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Quién es el líder de la Guardia de la Noche al comienzo de la serie?",
+    "opciones": [
+      "Jeor Mormont",
+      "Alliser Thorne",
+      "Jon Nieve",
+      "Samwell Tarly"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué personaje es conocido como 'El Rey Más Allá del Muro'?",
+    "opciones": [
+      "Mance Rayder",
+      "Tormund Giantsbane",
+      "Jon Nieve",
+      "Styr"
+    ],
+    "respuesta": 0
+  }]
